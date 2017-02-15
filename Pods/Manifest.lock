@@ -1,0 +1,30 @@
+PODS:
+  - LBXAlertAction (1.0.3)
+  - ZXingObjC (3.1.0):
+    - ZXingObjC/All (= 3.1.0)
+  - ZXingObjC/All (3.1.0)
+  - ZYCornerRadius (0.8.1)
+
+DEPENDENCIES:
+  - LBXAlertAction
+  - ZXingObjC (~> 3.0)
+  - ZYCornerRadius (from `https://github.com/liuzhiyi1992/ZYCornerRadius.git`, tag `0.9.1`)
+
+EXTERNAL SOURCES:
+  ZYCornerRadius:
+    :git: https://github.com/liuzhiyi1992/ZYCornerRadius.git
+    :tag: 0.9.1
+
+CHECKOUT OPTIONS:
+  ZYCornerRadius:
+    :git: https://github.com/liuzhiyi1992/ZYCornerRadius.git
+    :tag: 0.9.1
+
+SPEC CHECKSUMS:
+  LBXAlertAction: e904f511f0e44fde323e056691d7a8a99d71faba
+  ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
+  ZYCornerRadius: 485a8e9304d16d1620641054a08b9c0f55dd512c
+
+PODFILE CHECKSUM: c9ea5fcd51144666c9de24d1d3ead00c836ea11d
+
+COCOAPODS: 1.1.1

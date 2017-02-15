@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>LBXAlertAction.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ScanHelperDemo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZXingObjC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZYCornerRadius.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6197A40AD4067C9D4D3FD1B59E20E4CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84A60870D2C219C73F0409646E6208BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>919C3FF39117961C7CC44EAB4ED3751A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9863EEEF9B5C5FC05125E79A44F16BED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

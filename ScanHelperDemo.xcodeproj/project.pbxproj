@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68913A6A1E52D5AD00C053C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913A691E52D5AD00C053C6 /* main.m */; };
+		68913A6D1E52D5AD00C053C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913A6C1E52D5AD00C053C6 /* AppDelegate.m */; };
+		68913A701E52D5AD00C053C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913A6F1E52D5AD00C053C6 /* ViewController.m */; };
+		68913A751E52D5AD00C053C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68913A741E52D5AD00C053C6 /* Assets.xcassets */; };
+		68913A781E52D5AD00C053C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68913A761E52D5AD00C053C6 /* LaunchScreen.storyboard */; };
+		68913A831E52D5AD00C053C6 /* ScanHelperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913A821E52D5AD00C053C6 /* ScanHelperDemoTests.m */; };
+		68913ACC1E52DE9000C053C6 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68913AB41E52DE9000C053C6 /* CodeScan.bundle */; };
+		68913ACD1E52DE9000C053C6 /* LBXZXCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913AB61E52DE9000C053C6 /* LBXZXCapture.m */; };
+		68913ACE1E52DE9000C053C6 /* ZXingWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913AB91E52DE9000C053C6 /* ZXingWrapper.m */; };
+		68913ACF1E52DE9000C053C6 /* LBXScanLineAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913ABB1E52DE9000C053C6 /* LBXScanLineAnimation.m */; };
+		68913AD01E52DE9000C053C6 /* LBXScanNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913ABD1E52DE9000C053C6 /* LBXScanNative.m */; };
+		68913AD11E52DE9000C053C6 /* LBXScanNetAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913ABF1E52DE9000C053C6 /* LBXScanNetAnimation.m */; };
+		68913AD21E52DE9000C053C6 /* LBXScanResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913AC11E52DE9000C053C6 /* LBXScanResult.m */; };
+		68913AD31E52DE9000C053C6 /* LBXScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913AC31E52DE9000C053C6 /* LBXScanView.m */; };
+		68913AD41E52DE9000C053C6 /* LBXScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913AC51E52DE9000C053C6 /* LBXScanViewController.m */; };
+		68913AD51E52DE9000C053C6 /* LBXScanViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913AC71E52DE9000C053C6 /* LBXScanViewStyle.m */; };
+		68913AD61E52DE9000C053C6 /* LBXScanWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913AC91E52DE9000C053C6 /* LBXScanWrapper.m */; };
+		68913AD71E52DE9000C053C6 /* LBXScanVideoZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913ACB1E52DE9000C053C6 /* LBXScanVideoZoomView.m */; };
+		68913ADB1E52E35700C053C6 /* ScanHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913ADA1E52E35700C053C6 /* ScanHelper.m */; };
+		68913ADE1E52E4DE00C053C6 /* ScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913ADD1E52E4DE00C053C6 /* ScanQRViewController.m */; };
+		68913AE11E52E66800C053C6 /* MyQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913AE01E52E66800C053C6 /* MyQRViewController.m */; };
+		C2037F34DA39ADC172ED5CEE /* libPods-ScanHelperDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16239E5A36B8D97DCE2B80D0 /* libPods-ScanHelperDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68913A7F1E52D5AD00C053C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68913A5D1E52D5AD00C053C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68913A641E52D5AD00C053C6;
+			remoteInfo = ScanHelperDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16239E5A36B8D97DCE2B80D0 /* libPods-ScanHelperDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScanHelperDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		523BF20FBD5DCCC4CA8DC1E5 /* Pods-ScanHelperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanHelperDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScanHelperDemo/Pods-ScanHelperDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		68913A651E52D5AD00C053C6 /* ScanHelperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanHelperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68913A691E52D5AD00C053C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68913A6B1E52D5AD00C053C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68913A6C1E52D5AD00C053C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68913A6E1E52D5AD00C053C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68913A6F1E52D5AD00C053C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68913A741E52D5AD00C053C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68913A771E52D5AD00C053C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68913A791E52D5AD00C053C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68913A7E1E52D5AD00C053C6 /* ScanHelperDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanHelperDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68913A821E52D5AD00C053C6 /* ScanHelperDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanHelperDemoTests.m; sourceTree = "<group>"; };
+		68913A841E52D5AD00C053C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68913AB41E52DE9000C053C6 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
+		68913AB51E52DE9000C053C6 /* LBXZXCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXZXCapture.h; sourceTree = "<group>"; };
+		68913AB61E52DE9000C053C6 /* LBXZXCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXZXCapture.m; sourceTree = "<group>"; };
+		68913AB71E52DE9000C053C6 /* LBXZXCaptureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXZXCaptureDelegate.h; sourceTree = "<group>"; };
+		68913AB81E52DE9000C053C6 /* ZXingWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXingWrapper.h; sourceTree = "<group>"; };
+		68913AB91E52DE9000C053C6 /* ZXingWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXingWrapper.m; sourceTree = "<group>"; };
+		68913ABA1E52DE9000C053C6 /* LBXScanLineAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanLineAnimation.h; sourceTree = "<group>"; };
+		68913ABB1E52DE9000C053C6 /* LBXScanLineAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanLineAnimation.m; sourceTree = "<group>"; };
+		68913ABC1E52DE9000C053C6 /* LBXScanNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanNative.h; sourceTree = "<group>"; };
+		68913ABD1E52DE9000C053C6 /* LBXScanNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanNative.m; sourceTree = "<group>"; };
+		68913ABE1E52DE9000C053C6 /* LBXScanNetAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanNetAnimation.h; sourceTree = "<group>"; };
+		68913ABF1E52DE9000C053C6 /* LBXScanNetAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanNetAnimation.m; sourceTree = "<group>"; };
+		68913AC01E52DE9000C053C6 /* LBXScanResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanResult.h; sourceTree = "<group>"; };
+		68913AC11E52DE9000C053C6 /* LBXScanResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanResult.m; sourceTree = "<group>"; };
+		68913AC21E52DE9000C053C6 /* LBXScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanView.h; sourceTree = "<group>"; };
+		68913AC31E52DE9000C053C6 /* LBXScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanView.m; sourceTree = "<group>"; };
+		68913AC41E52DE9000C053C6 /* LBXScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanViewController.h; sourceTree = "<group>"; };
+		68913AC51E52DE9000C053C6 /* LBXScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanViewController.m; sourceTree = "<group>"; };
+		68913AC61E52DE9000C053C6 /* LBXScanViewStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanViewStyle.h; sourceTree = "<group>"; };
+		68913AC71E52DE9000C053C6 /* LBXScanViewStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanViewStyle.m; sourceTree = "<group>"; };
+		68913AC81E52DE9000C053C6 /* LBXScanWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanWrapper.h; sourceTree = "<group>"; };
+		68913AC91E52DE9000C053C6 /* LBXScanWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanWrapper.m; sourceTree = "<group>"; };
+		68913ACA1E52DE9000C053C6 /* LBXScanVideoZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanVideoZoomView.h; sourceTree = "<group>"; };
+		68913ACB1E52DE9000C053C6 /* LBXScanVideoZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanVideoZoomView.m; sourceTree = "<group>"; };
+		68913AD81E52E03500C053C6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		68913AD91E52E35700C053C6 /* ScanHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanHelper.h; path = ScanHelperDemo/Scanner/ScanHelper.h; sourceTree = SOURCE_ROOT; };
+		68913ADA1E52E35700C053C6 /* ScanHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanHelper.m; path = ScanHelperDemo/Scanner/ScanHelper.m; sourceTree = SOURCE_ROOT; };
+		68913ADC1E52E4DE00C053C6 /* ScanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanQRViewController.h; path = ../ScanQRViewController.h; sourceTree = "<group>"; };
+		68913ADD1E52E4DE00C053C6 /* ScanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanQRViewController.m; path = ../ScanQRViewController.m; sourceTree = "<group>"; };
+		68913ADF1E52E66800C053C6 /* MyQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyQRViewController.h; path = ../MyQRViewController.h; sourceTree = "<group>"; };
+		68913AE01E52E66800C053C6 /* MyQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyQRViewController.m; path = ../MyQRViewController.m; sourceTree = "<group>"; };
+		8E03ED4E51FFF78C9711E511 /* Pods-ScanHelperDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanHelperDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScanHelperDemo/Pods-ScanHelperDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68913A621E52D5AD00C053C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2037F34DA39ADC172ED5CEE /* libPods-ScanHelperDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68913A7B1E52D5AD00C053C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0580C3B97CC614087FA19CEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				523BF20FBD5DCCC4CA8DC1E5 /* Pods-ScanHelperDemo.debug.xcconfig */,
+				8E03ED4E51FFF78C9711E511 /* Pods-ScanHelperDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		681B284D1E53F60B00A7557D /* ScanHelper */ = {
+			isa = PBXGroup;
+			children = (
+				68913AD91E52E35700C053C6 /* ScanHelper.h */,
+				68913ADA1E52E35700C053C6 /* ScanHelper.m */,
+				68913ADC1E52E4DE00C053C6 /* ScanQRViewController.h */,
+				68913ADD1E52E4DE00C053C6 /* ScanQRViewController.m */,
+				68913ADF1E52E66800C053C6 /* MyQRViewController.h */,
+				68913AE01E52E66800C053C6 /* MyQRViewController.m */,
+			);
+			path = ScanHelper;
+			sourceTree = "<group>";
+		};
+		68913A5C1E52D5AD00C053C6 = {
+			isa = PBXGroup;
+			children = (
+				68913A671E52D5AD00C053C6 /* ScanHelperDemo */,
+				68913A811E52D5AD00C053C6 /* ScanHelperDemoTests */,
+				68913A661E52D5AD00C053C6 /* Products */,
+				0580C3B97CC614087FA19CEF /* Pods */,
+				F845AE2FE2FE42F417273F23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68913A661E52D5AD00C053C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68913A651E52D5AD00C053C6 /* ScanHelperDemo.app */,
+				68913A7E1E52D5AD00C053C6 /* ScanHelperDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68913A671E52D5AD00C053C6 /* ScanHelperDemo */ = {
+			isa = PBXGroup;
+			children = (
+				68913AB21E52DE6E00C053C6 /* Scanner */,
+				68913A6E1E52D5AD00C053C6 /* ViewController.h */,
+				68913A6F1E52D5AD00C053C6 /* ViewController.m */,
+				68913A681E52D5AD00C053C6 /* Supporting Files */,
+			);
+			path = ScanHelperDemo;
+			sourceTree = "<group>";
+		};
+		68913A681E52D5AD00C053C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68913A6B1E52D5AD00C053C6 /* AppDelegate.h */,
+				68913A6C1E52D5AD00C053C6 /* AppDelegate.m */,
+				68913A741E52D5AD00C053C6 /* Assets.xcassets */,
+				68913A761E52D5AD00C053C6 /* LaunchScreen.storyboard */,
+				68913A791E52D5AD00C053C6 /* Info.plist */,
+				68913A691E52D5AD00C053C6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68913A811E52D5AD00C053C6 /* ScanHelperDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				68913A821E52D5AD00C053C6 /* ScanHelperDemoTests.m */,
+				68913A841E52D5AD00C053C6 /* Info.plist */,
+			);
+			path = ScanHelperDemoTests;
+			sourceTree = "<group>";
+		};
+		68913AB21E52DE6E00C053C6 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				68913AD81E52E03500C053C6 /* PrefixHeader.pch */,
+				681B284D1E53F60B00A7557D /* ScanHelper */,
+				68913AB31E52DE8400C053C6 /* LBXScan */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		68913AB31E52DE8400C053C6 /* LBXScan */ = {
+			isa = PBXGroup;
+			children = (
+				68913AB41E52DE9000C053C6 /* CodeScan.bundle */,
+				68913AB51E52DE9000C053C6 /* LBXZXCapture.h */,
+				68913AB61E52DE9000C053C6 /* LBXZXCapture.m */,
+				68913AB71E52DE9000C053C6 /* LBXZXCaptureDelegate.h */,
+				68913AB81E52DE9000C053C6 /* ZXingWrapper.h */,
+				68913AB91E52DE9000C053C6 /* ZXingWrapper.m */,
+				68913ABA1E52DE9000C053C6 /* LBXScanLineAnimation.h */,
+				68913ABB1E52DE9000C053C6 /* LBXScanLineAnimation.m */,
+				68913ABC1E52DE9000C053C6 /* LBXScanNative.h */,
+				68913ABD1E52DE9000C053C6 /* LBXScanNative.m */,
+				68913ABE1E52DE9000C053C6 /* LBXScanNetAnimation.h */,
+				68913ABF1E52DE9000C053C6 /* LBXScanNetAnimation.m */,
+				68913AC01E52DE9000C053C6 /* LBXScanResult.h */,
+				68913AC11E52DE9000C053C6 /* LBXScanResult.m */,
+				68913AC21E52DE9000C053C6 /* LBXScanView.h */,
+				68913AC31E52DE9000C053C6 /* LBXScanView.m */,
+				68913AC41E52DE9000C053C6 /* LBXScanViewController.h */,
+				68913AC51E52DE9000C053C6 /* LBXScanViewController.m */,
+				68913AC61E52DE9000C053C6 /* LBXScanViewStyle.h */,
+				68913AC71E52DE9000C053C6 /* LBXScanViewStyle.m */,
+				68913AC81E52DE9000C053C6 /* LBXScanWrapper.h */,
+				68913AC91E52DE9000C053C6 /* LBXScanWrapper.m */,
+				68913ACA1E52DE9000C053C6 /* LBXScanVideoZoomView.h */,
+				68913ACB1E52DE9000C053C6 /* LBXScanVideoZoomView.m */,
+			);
+			path = LBXScan;
+			sourceTree = "<group>";
+		};
+		F845AE2FE2FE42F417273F23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16239E5A36B8D97DCE2B80D0 /* libPods-ScanHelperDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68913A641E52D5AD00C053C6 /* ScanHelperDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68913A871E52D5AD00C053C6 /* Build configuration list for PBXNativeTarget "ScanHelperDemo" */;
+			buildPhases = (
+				85E1CCC4C9533069543F7375 /* [CP] Check Pods Manifest.lock */,
+				68913A611E52D5AD00C053C6 /* Sources */,
+				68913A621E52D5AD00C053C6 /* Frameworks */,
+				68913A631E52D5AD00C053C6 /* Resources */,
+				1FFB49708FB8FB630B57F9D1 /* [CP] Embed Pods Frameworks */,
+				E22BBC5874EFC6A1A9BFEE74 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScanHelperDemo;
+			productName = ScanHelperDemo;
+			productReference = 68913A651E52D5AD00C053C6 /* ScanHelperDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68913A7D1E52D5AD00C053C6 /* ScanHelperDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68913A8A1E52D5AD00C053C6 /* Build configuration list for PBXNativeTarget "ScanHelperDemoTests" */;
+			buildPhases = (
+				68913A7A1E52D5AD00C053C6 /* Sources */,
+				68913A7B1E52D5AD00C053C6 /* Frameworks */,
+				68913A7C1E52D5AD00C053C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68913A801E52D5AD00C053C6 /* PBXTargetDependency */,
+			);
+			name = ScanHelperDemoTests;
+			productName = ScanHelperDemoTests;
+			productReference = 68913A7E1E52D5AD00C053C6 /* ScanHelperDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68913A5D1E52D5AD00C053C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = zhengrui;
+				TargetAttributes = {
+					68913A641E52D5AD00C053C6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N6Z77A679V;
+						ProvisioningStyle = Automatic;
+					};
+					68913A7D1E52D5AD00C053C6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 68913A641E52D5AD00C053C6;
+					};
+				};
+			};
+			buildConfigurationList = 68913A601E52D5AD00C053C6 /* Build configuration list for PBXProject "ScanHelperDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68913A5C1E52D5AD00C053C6;
+			productRefGroup = 68913A661E52D5AD00C053C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68913A641E52D5AD00C053C6 /* ScanHelperDemo */,
+				68913A7D1E52D5AD00C053C6 /* ScanHelperDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68913A631E52D5AD00C053C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68913A781E52D5AD00C053C6 /* LaunchScreen.storyboard in Resources */,
+				68913A751E52D5AD00C053C6 /* Assets.xcassets in Resources */,
+				68913ACC1E52DE9000C053C6 /* CodeScan.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68913A7C1E52D5AD00C053C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FFB49708FB8FB630B57F9D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanHelperDemo/Pods-ScanHelperDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85E1CCC4C9533069543F7375 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E22BBC5874EFC6A1A9BFEE74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanHelperDemo/Pods-ScanHelperDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68913A611E52D5AD00C053C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68913AD51E52DE9000C053C6 /* LBXScanViewStyle.m in Sources */,
+				68913AD61E52DE9000C053C6 /* LBXScanWrapper.m in Sources */,
+				68913A701E52D5AD00C053C6 /* ViewController.m in Sources */,
+				68913ACD1E52DE9000C053C6 /* LBXZXCapture.m in Sources */,
+				68913AD11E52DE9000C053C6 /* LBXScanNetAnimation.m in Sources */,
+				68913AD21E52DE9000C053C6 /* LBXScanResult.m in Sources */,
+				68913AD01E52DE9000C053C6 /* LBXScanNative.m in Sources */,
+				68913ACF1E52DE9000C053C6 /* LBXScanLineAnimation.m in Sources */,
+				68913ADE1E52E4DE00C053C6 /* ScanQRViewController.m in Sources */,
+				68913AD31E52DE9000C053C6 /* LBXScanView.m in Sources */,
+				68913AD71E52DE9000C053C6 /* LBXScanVideoZoomView.m in Sources */,
+				68913ACE1E52DE9000C053C6 /* ZXingWrapper.m in Sources */,
+				68913ADB1E52E35700C053C6 /* ScanHelper.m in Sources */,
+				68913AE11E52E66800C053C6 /* MyQRViewController.m in Sources */,
+				68913AD41E52DE9000C053C6 /* LBXScanViewController.m in Sources */,
+				68913A6D1E52D5AD00C053C6 /* AppDelegate.m in Sources */,
+				68913A6A1E52D5AD00C053C6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68913A7A1E52D5AD00C053C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68913A831E52D5AD00C053C6 /* ScanHelperDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68913A801E52D5AD00C053C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68913A641E52D5AD00C053C6 /* ScanHelperDemo */;
+			targetProxy = 68913A7F1E52D5AD00C053C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68913A761E52D5AD00C053C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68913A771E52D5AD00C053C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68913A851E52D5AD00C053C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68913A861E52D5AD00C053C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68913A881E52D5AD00C053C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 523BF20FBD5DCCC4CA8DC1E5 /* Pods-ScanHelperDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N6Z77A679V;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ScanHelperDemo/Scanner/PrefixHeader.pch";
+				INFOPLIST_FILE = ScanHelperDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ccpg.ScanHelperDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		68913A891E52D5AD00C053C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E03ED4E51FFF78C9711E511 /* Pods-ScanHelperDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N6Z77A679V;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ScanHelperDemo/Scanner/PrefixHeader.pch";
+				INFOPLIST_FILE = ScanHelperDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ccpg.ScanHelperDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		68913A8B1E52D5AD00C053C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScanHelperDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ccpg.ScanHelperDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanHelperDemo.app/ScanHelperDemo";
+			};
+			name = Debug;
+		};
+		68913A8C1E52D5AD00C053C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScanHelperDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ccpg.ScanHelperDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanHelperDemo.app/ScanHelperDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68913A601E52D5AD00C053C6 /* Build configuration list for PBXProject "ScanHelperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68913A851E52D5AD00C053C6 /* Debug */,
+				68913A861E52D5AD00C053C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68913A871E52D5AD00C053C6 /* Build configuration list for PBXNativeTarget "ScanHelperDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68913A881E52D5AD00C053C6 /* Debug */,
+				68913A891E52D5AD00C053C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68913A8A1E52D5AD00C053C6 /* Build configuration list for PBXNativeTarget "ScanHelperDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68913A8B1E52D5AD00C053C6 /* Debug */,
+				68913A8C1E52D5AD00C053C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68913A5D1E52D5AD00C053C6 /* Project object */;
+}
