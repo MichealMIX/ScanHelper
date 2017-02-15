@@ -1,6 +1,4 @@
-<p align="center" >
-  <img src="http://upload.jianshu.io/users/upload_avatars/2572187/5a03413614d6?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240" alt="MichealMIX" title="MichealMIX">
-</p>
+
 ####基于LBXScan进行的扫码封装，更加简化了实用方式，两行代码即可实现扫码功能<p>
 ###1.首先在项目中pod如下库<br>
 ```pod 'ZXingObjC', '~> 3.0'```<br>
