@@ -11,7 +11,7 @@
 ###4.在需要实现扫码的地方导入头文件<br>
 ```#import "ScanHelper.h"```<br>
 ###5.在扫码方法中添加如下代码，如果想自定义样式在ScanHelper中修改即可，并枚举出了封装好的几种风格<br>
-    [self.navigationController pushViewController:[[ScanHelper shareInstance] ScanVCWithStyle:qqStyle qrResultCallBack:^(id result) {
+    [self.navigationController pushViewController:[[ScanHelper shareInstance] ScanVCWithStyle:qqStyle qrResultCallBack:^(id result) {
         //扫码结果
         NSLog(@"-----%@",result);
     }] animated:YES];
