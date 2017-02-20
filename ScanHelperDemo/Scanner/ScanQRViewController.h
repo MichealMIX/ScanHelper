@@ -31,4 +31,6 @@
 @property (nonatomic, strong) UIButton *btnFlash;
 //我的二维码
 @property (nonatomic, strong) UIButton *btnMyQR;
+
+@property (nonatomic, copy) void(^QRResultBlock)(id result);
 @end

@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "ScanHelper.h"
-@interface ViewController ()<ScanStyleDelegate>
+
+@interface ViewController ()
 /**点击二维码手势*/
 @property (nonatomic , strong) UITapGestureRecognizer *tap;
 @property (nonatomic ,strong)UIImageView *scanImage;
@@ -33,14 +34,14 @@
 
 - (void)tapScanView{
     //所有扫码样式在ScanHelper中可见
-    [ScanHelper shareInstance].delegate = self;
-    [[ScanHelper shareInstance] goScanWithStyle:@"qqStyle"];
+    
+    [self.navigationController pushViewController:[[ScanHelper shareInstance] ScanVCWithStyle:qqStyle qrResultCallBack:^(id result) {
+        //扫码结果
+        NSLog(@"-----%@",result);
+    }] animated:YES];
 }
 
-#pragma mark ScanHelper 代理方法
-- (void)pushScanController:(UIViewController *)controller{
-    [self.navigationController pushViewController:controller animated:YES];
-}
+
 
 - (UITapGestureRecognizer *)tap{
     if (!_tap) {

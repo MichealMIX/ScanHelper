@@ -7,18 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@protocol ScanStyleDelegate <NSObject>
-
--(void)pushScanController:(UIViewController *)controller;
-
-@end
+#import "ScanQRViewController.h"
+typedef NS_ENUM(NSInteger, QRScanStyle) {
+    qqStyle,        //QQ风格
+    ZhiFuBaoStyle,  //支付宝风格
+    InnerStyle,     //无边框，内嵌4个角
+    weixinStyle,    //微信风格
+    OnStyle,        //4个角在矩形框线上,网格动画
+    changeSize      //改变扫码区域位置
+};
 
 @interface ScanHelper : NSObject
 
-- (void)goScanWithStyle:(NSString *)style;
+@property (nonatomic , assign) QRScanStyle qRScanStyle;
+
+
+- (ScanQRViewController *)ScanVCWithStyle:(QRScanStyle )style qrResultCallBack:(void(^)(id result))qrResult;
+
 
 + (instancetype)shareInstance;
-
-@property(nonatomic,assign) id<ScanStyleDelegate>        delegate;
 @end

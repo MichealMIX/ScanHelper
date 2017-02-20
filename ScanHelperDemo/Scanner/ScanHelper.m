@@ -14,6 +14,7 @@
 #import "LBXScanResult.h"
 #import "LBXScanWrapper.h"
 
+
 @implementation ScanHelper
 
 static ScanHelper *scanHelper;
@@ -26,24 +27,7 @@ static ScanHelper *scanHelper;
     return scanHelper;
 }
 
-- (void)goScanWithStyle:(NSString *)style{
-    
-    if (![self cameraPemission])
-    {
-        [self showError:@"没有摄像机权限"];
-        
-        return;
-    }
-    
-    NSString *methodName = style;
-    
-    SEL normalSelector = NSSelectorFromString(methodName);
-    if ([self respondsToSelector:normalSelector]) {
-        
-        ((void (*)(id, SEL))objc_msgSend)(self, normalSelector);
-    }
-    
-}
+
 
 - (BOOL)cameraPemission
 {
@@ -76,7 +60,7 @@ static ScanHelper *scanHelper;
 }
 
 #pragma mark -模仿qq界面
-- (void)qqStyle
+- (LBXScanViewStyle *)qqStyle
 {
     //设置扫码区域参数设置
     
@@ -105,12 +89,11 @@ static ScanHelper *scanHelper;
     style.animationImage = [UIImage imageNamed:@"CodeScan.bundle/qrcode_scan_light_green"];
     
     //SubLBXScanViewController继承自LBXScanViewController
-    //添加一些扫码或相册结果处理
-    [self openScanVCWithStyle:style];
+    return style;
 }
 
 #pragma mark --模仿支付宝
-- (void)ZhiFuBaoStyle
+- (LBXScanViewStyle *)ZhiFuBaoStyle
 {
     //设置扫码区域参数
     LBXScanViewStyle *style = [[LBXScanViewStyle alloc]init];
@@ -143,13 +126,13 @@ static ScanHelper *scanHelper;
     style.animationImage = imgFullNet;
     
     
-    [self openScanVCWithStyle:style];
+    return style;
 }
 
 
 
 #pragma mark -无边框，内嵌4个角
-- (void)InnerStyle
+- (LBXScanViewStyle *)InnerStyle
 {
     //设置扫码区域参数
     LBXScanViewStyle *style = [[LBXScanViewStyle alloc]init];
@@ -169,13 +152,11 @@ static ScanHelper *scanHelper;
     //非正方形
     //        style.isScanRetangelSquare = NO;
     //        style.xScanRetangleOffset = 40;
-    
-    
-    [self openScanVCWithStyle:style];
+    return style;
 }
 
 #pragma mark -无边框，内嵌4个角
-- (void)weixinStyle
+- (LBXScanViewStyle *)weixinStyle
 {
     //设置扫码区域参数
     LBXScanViewStyle *style = [[LBXScanViewStyle alloc]init];
@@ -197,15 +178,12 @@ static ScanHelper *scanHelper;
     // imgLine = [self createImageWithColor:[UIColor colorWithRed:120/255. green:221/255. blue:71/255. alpha:1.0]];
     
     style.animationImage = imgLine;
+    return style;
     
-    
-    
-    
-    [self openScanVCWithStyle:style];
 }
 
 #pragma mark -框内区域识别
-- (void)recoCropRect
+- (LBXScanViewStyle *)recoCropRect
 {
     //设置扫码区域参数
     LBXScanViewStyle *style = [[LBXScanViewStyle alloc]init];
@@ -226,14 +204,14 @@ static ScanHelper *scanHelper;
     UIImage *imgPartNet = [UIImage imageNamed:@"CodeScan.bundle/qrcode_scan_part_net"];
     
     style.animationImage = imgPartNet;
-    [self openScanVCWithStyle:style];
+    return style;
 }
 
 
 
 
 #pragma mark -4个角在矩形框线上,网格动画
-- (void)OnStyle
+- (LBXScanViewStyle *)OnStyle
 {
     //设置扫码区域参数
     LBXScanViewStyle *style = [[LBXScanViewStyle alloc]init];
@@ -255,13 +233,12 @@ static ScanHelper *scanHelper;
     //非正方形
     //        style.isScanRetangelSquare = NO;
     //        style.xScanRetangleOffset = 40;
-    
-    [self openScanVCWithStyle:style];
+    return style;
 }
 
 
 #pragma mark -改变扫码区域位置
-- (void)changeSize
+- (LBXScanViewStyle *)changeSize
 {
     //设置扫码区域参数
     LBXScanViewStyle *style = [[LBXScanViewStyle alloc]init];
@@ -283,8 +260,7 @@ static ScanHelper *scanHelper;
     UIImage *imgLine = [UIImage imageNamed:@"CodeScan.bundle/qrcode_scan_light_green"];
     
     style.animationImage = imgLine;
-    
-    [self openScanVCWithStyle:style];
+    return style;
 }
 
 #pragma mark -非正方形，可以用在扫码条形码界面
@@ -301,7 +277,7 @@ static ScanHelper *scanHelper;
     return theImage;
 }
 
-- (void)notSquare
+- (LBXScanViewStyle *)notSquare
 {
     //设置扫码区域参数
     LBXScanViewStyle *style = [[LBXScanViewStyle alloc]init];
@@ -322,19 +298,41 @@ static ScanHelper *scanHelper;
     
     //离左边和右边距离
     style.xScanRetangleOffset = 30;
-    
-    
-    
-    [self openScanVCWithStyle:style];
+    return style;
 }
 
 
-- (void)openScanVCWithStyle:(LBXScanViewStyle*)style
+- (ScanQRViewController *)ScanVCWithStyle:(QRScanStyle )style qrResultCallBack:(void (^)(id))qrResult
 {
+    if (![self cameraPemission])
+    {
+        [self showError:@"没有摄像机权限"];
+    }
+    
+    LBXScanViewStyle *lbx = nil;
+    
+    if (style == qqStyle) {
+        lbx = [self qqStyle];
+    }else if (style == ZhiFuBaoStyle){
+        lbx = [self ZhiFuBaoStyle];
+    }else if (style == InnerStyle){
+        lbx = [self InnerStyle];
+    }else if (style == weixinStyle){
+        lbx = [self weixinStyle];
+    }else if (style == OnStyle){
+        lbx = [self OnStyle];
+    }else{
+        lbx = [self changeSize];
+    }
+
+    
     ScanQRViewController *vc = [ScanQRViewController new];
-    vc.style = style;
+    vc.style = lbx;
     vc.isQQSimulator = YES;
     vc.isVideoZoom = YES;
-    [self.delegate pushScanController:vc];
+    vc.QRResultBlock = ^(id result){
+        qrResult(result);
+    };
+    return vc;
 }
 @end

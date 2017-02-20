@@ -243,6 +243,9 @@
 - (void)showNextVCWithScanResult:(LBXScanResult*)strResult
 {
     //这里处理扫描结果
+    if (self.QRResultBlock) {
+        self.QRResultBlock(strResult.strScanned);
+    }
 }
 
 
