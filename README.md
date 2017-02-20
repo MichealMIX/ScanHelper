@@ -10,23 +10,13 @@
 ###3.在项目中拖入ScanHelper以及LBXScan两个文件夹<br>
 ###4.在需要实现扫码的地方导入头文件<br>
 ```#import "ScanHelper.h"```<br>
-###5.在相应位置添加代理<br>
-```@interface ViewController ()<ScanStyleDelegate>```<br>
-###6.在扫码方法中添加如下两行代码<br>
-    //如果想自定义样式在ScanHelper中修改即可，将“qqStyle”替换为相应样式名称
-    [ScanHelper shareInstance].delegate = self;
-    [[ScanHelper shareInstance] goScanWithStyle:@"qqStyle"];
-###7.实现相应代理方法即可实现扫码<br>
-    #pragma mark ScanHelper 代理方法
-    - (void)pushScanController:(UIViewController *)controller{
-         [self.navigationController pushViewController:controller animated:YES];
-    }
-###8.扫码结果在ScanQRViewController中showNextVCWithScanResult方法处理
-    - (void)showNextVCWithScanResult:(LBXScanResult*)strResult
-    {
-         //这里处理扫描结果
-    }
-###9.特别注意在iOS10以上要修改隐私权限，找到info.plist文件右键source code方式打开，添加如下代码即可
+###5.在扫码方法中添加如下代码，如果想自定义样式在ScanHelper中修改即可，并枚举出了封装好的几种风格<br>
+    [self.navigationController pushViewController:[[ScanHelper shareInstance] ScanVCWithStyle:qqStyle qrResultCallBack:^(id result) {
+        //扫码结果
+        NSLog(@"-----%@",result);
+    }] animated:YES];
+###6.在回调方法中处理逻辑即可
+###7.特别注意在iOS10以上要修改隐私权限，找到info.plist文件右键source code方式打开，添加如下代码即可
         <key>NSCameraUsageDescription</key>
 	    <string>是否允许使用相机</string>
 	    <key>NSPhotoLibraryUsageDescription</key>
