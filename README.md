@@ -1,5 +1,4 @@
 
-####基于LBXScan进行的扫码封装，更加简化了使用方式，一个方法即可实现扫码功能<p>
 ###1.首先在项目中pod如下库<br>
 ```pod 'ZXingObjC', '~> 3.0'```<br>
 ```pod 'LBXAlertAction'```<br>
