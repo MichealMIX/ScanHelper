@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68323F3B20B67C7E00FEF52B /* ScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68323F3820B67C7E00FEF52B /* ScanQRViewController.m */; };
+		68323F3C20B67C7E00FEF52B /* MyQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68323F3920B67C7E00FEF52B /* MyQRViewController.m */; };
+		68323F3D20B67C7E00FEF52B /* ScanHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68323F3A20B67C7E00FEF52B /* ScanHelper.m */; };
 		68913A6A1E52D5AD00C053C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913A691E52D5AD00C053C6 /* main.m */; };
 		68913A6D1E52D5AD00C053C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913A6C1E52D5AD00C053C6 /* AppDelegate.m */; };
 		68913A701E52D5AD00C053C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913A6F1E52D5AD00C053C6 /* ViewController.m */; };
@@ -25,9 +28,6 @@
 		68913AD51E52DE9000C053C6 /* LBXScanViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913AC71E52DE9000C053C6 /* LBXScanViewStyle.m */; };
 		68913AD61E52DE9000C053C6 /* LBXScanWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913AC91E52DE9000C053C6 /* LBXScanWrapper.m */; };
 		68913AD71E52DE9000C053C6 /* LBXScanVideoZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913ACB1E52DE9000C053C6 /* LBXScanVideoZoomView.m */; };
-		68913ADB1E52E35700C053C6 /* ScanHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913ADA1E52E35700C053C6 /* ScanHelper.m */; };
-		68913ADE1E52E4DE00C053C6 /* ScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913ADD1E52E4DE00C053C6 /* ScanQRViewController.m */; };
-		68913AE11E52E66800C053C6 /* MyQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68913AE01E52E66800C053C6 /* MyQRViewController.m */; };
 		C2037F34DA39ADC172ED5CEE /* libPods-ScanHelperDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16239E5A36B8D97DCE2B80D0 /* libPods-ScanHelperDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +44,12 @@
 /* Begin PBXFileReference section */
 		16239E5A36B8D97DCE2B80D0 /* libPods-ScanHelperDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScanHelperDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		523BF20FBD5DCCC4CA8DC1E5 /* Pods-ScanHelperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanHelperDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScanHelperDemo/Pods-ScanHelperDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		68323F3520B67C7E00FEF52B /* MyQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQRViewController.h; sourceTree = "<group>"; };
+		68323F3620B67C7E00FEF52B /* ScanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRViewController.h; sourceTree = "<group>"; };
+		68323F3720B67C7E00FEF52B /* ScanHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanHelper.h; sourceTree = "<group>"; };
+		68323F3820B67C7E00FEF52B /* ScanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRViewController.m; sourceTree = "<group>"; };
+		68323F3920B67C7E00FEF52B /* MyQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQRViewController.m; sourceTree = "<group>"; };
+		68323F3A20B67C7E00FEF52B /* ScanHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanHelper.m; sourceTree = "<group>"; };
 		68913A651E52D5AD00C053C6 /* ScanHelperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanHelperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68913A691E52D5AD00C053C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68913A6B1E52D5AD00C053C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,12 +87,6 @@
 		68913ACA1E52DE9000C053C6 /* LBXScanVideoZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBXScanVideoZoomView.h; sourceTree = "<group>"; };
 		68913ACB1E52DE9000C053C6 /* LBXScanVideoZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBXScanVideoZoomView.m; sourceTree = "<group>"; };
 		68913AD81E52E03500C053C6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		68913AD91E52E35700C053C6 /* ScanHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanHelper.h; path = ScanHelperDemo/Scanner/ScanHelper.h; sourceTree = SOURCE_ROOT; };
-		68913ADA1E52E35700C053C6 /* ScanHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanHelper.m; path = ScanHelperDemo/Scanner/ScanHelper.m; sourceTree = SOURCE_ROOT; };
-		68913ADC1E52E4DE00C053C6 /* ScanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanQRViewController.h; path = ../ScanQRViewController.h; sourceTree = "<group>"; };
-		68913ADD1E52E4DE00C053C6 /* ScanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanQRViewController.m; path = ../ScanQRViewController.m; sourceTree = "<group>"; };
-		68913ADF1E52E66800C053C6 /* MyQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyQRViewController.h; path = ../MyQRViewController.h; sourceTree = "<group>"; };
-		68913AE01E52E66800C053C6 /* MyQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyQRViewController.m; path = ../MyQRViewController.m; sourceTree = "<group>"; };
 		8E03ED4E51FFF78C9711E511 /* Pods-ScanHelperDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanHelperDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScanHelperDemo/Pods-ScanHelperDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,15 +118,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		681B284D1E53F60B00A7557D /* ScanHelper */ = {
+		68323F3420B67C7E00FEF52B /* ScanHelper */ = {
 			isa = PBXGroup;
 			children = (
-				68913AD91E52E35700C053C6 /* ScanHelper.h */,
-				68913ADA1E52E35700C053C6 /* ScanHelper.m */,
-				68913ADC1E52E4DE00C053C6 /* ScanQRViewController.h */,
-				68913ADD1E52E4DE00C053C6 /* ScanQRViewController.m */,
-				68913ADF1E52E66800C053C6 /* MyQRViewController.h */,
-				68913AE01E52E66800C053C6 /* MyQRViewController.m */,
+				68323F3520B67C7E00FEF52B /* MyQRViewController.h */,
+				68323F3620B67C7E00FEF52B /* ScanQRViewController.h */,
+				68323F3720B67C7E00FEF52B /* ScanHelper.h */,
+				68323F3820B67C7E00FEF52B /* ScanQRViewController.m */,
+				68323F3920B67C7E00FEF52B /* MyQRViewController.m */,
+				68323F3A20B67C7E00FEF52B /* ScanHelper.m */,
 			);
 			path = ScanHelper;
 			sourceTree = "<group>";
@@ -187,8 +187,8 @@
 		68913AB21E52DE6E00C053C6 /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				68323F3420B67C7E00FEF52B /* ScanHelper */,
 				68913AD81E52E03500C053C6 /* PrefixHeader.pch */,
-				681B284D1E53F60B00A7557D /* ScanHelper */,
 				68913AB31E52DE8400C053C6 /* LBXScan */,
 			);
 			path = Scanner;
@@ -394,14 +394,14 @@
 				68913AD11E52DE9000C053C6 /* LBXScanNetAnimation.m in Sources */,
 				68913AD21E52DE9000C053C6 /* LBXScanResult.m in Sources */,
 				68913AD01E52DE9000C053C6 /* LBXScanNative.m in Sources */,
+				68323F3C20B67C7E00FEF52B /* MyQRViewController.m in Sources */,
 				68913ACF1E52DE9000C053C6 /* LBXScanLineAnimation.m in Sources */,
-				68913ADE1E52E4DE00C053C6 /* ScanQRViewController.m in Sources */,
 				68913AD31E52DE9000C053C6 /* LBXScanView.m in Sources */,
 				68913AD71E52DE9000C053C6 /* LBXScanVideoZoomView.m in Sources */,
+				68323F3B20B67C7E00FEF52B /* ScanQRViewController.m in Sources */,
 				68913ACE1E52DE9000C053C6 /* ZXingWrapper.m in Sources */,
-				68913ADB1E52E35700C053C6 /* ScanHelper.m in Sources */,
-				68913AE11E52E66800C053C6 /* MyQRViewController.m in Sources */,
 				68913AD41E52DE9000C053C6 /* LBXScanViewController.m in Sources */,
+				68323F3D20B67C7E00FEF52B /* ScanHelper.m in Sources */,
 				68913A6D1E52D5AD00C053C6 /* AppDelegate.m in Sources */,
 				68913A6A1E52D5AD00C053C6 /* main.m in Sources */,
 			);
